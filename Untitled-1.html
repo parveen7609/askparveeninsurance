@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASKPARVEENINSURANCE - All-in-One Insurance Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .navy-bg {
+            background-color: #192048;
+        }
+        .gold-text {
+            color: #FFD700;
+        }
+        .gold-bg {
+            background-color: #FFD700;
+        }
+        .insurance-card {
+            transition: transform 0.3s ease;
+        }
+        .insurance-card:hover {
+            transform: translateY(-5px);
+        }
+        .company-logo {
+            height: 60px;
+            width: 100px;
+            object-fit: contain;
+            background-color: white;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 8px;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #FFD700;
+            transition: width 0.3s;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .btn-primary {
+            background-color: #FFD700;
+            color: #192048;
+            transition: all 0.3s;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #E5C100;
+            transform: scale(1.05);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .trust-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: rgba(255, 215, 0, 0.1);
+            border: 1px solid #FFD700;
+            border-radius: 20px;
+            font-weight: 500;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navy-bg text-white shadow-lg">
+        <nav class="container mx-auto py-4 px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="mr-3">
+                    <img src="https://page.genspark.site/v1/base64_upload/7e2fded95cbc2dcfb054b857a3e4ed40" alt="ASKPARVEENINSURANCE Logo" class="h-16">
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold gold-text">ASKPARVEENINSURANCE</h1>
+                    <p class="text-sm text-gray-300">All-In-One Insurance Solutions</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <a href="#home" class="nav-link px-4 py-2 text-gray-300 hover:text-white">Home</a>
+                <a href="#services" class="nav-link px-4 py-2 text-gray-300 hover:text-white">Services</a>
+                <a href="#partners" class="nav-link px-4 py-2 text-gray-300 hover:text-white">Partners</a>
+                <a href="#about" class="nav-link px-4 py-2 text-gray-300 hover:text-white">About Us</a>
+                <a href="#contact" class="nav-link px-4 py-2 text-gray-300 hover:text-white">Contact</a>
+                <a href="tel:7609835426" class="ml-4 btn-primary px-5 py-2 font-semibold">
+                    <i class="fas fa-phone-alt mr-2"></i>Call Now
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="navy-bg text-white py-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                    Get Complete <span class="gold-text">Protection</span> For What Matters Most
+                </h2>
+                <p class="text-lg mb-8 text-gray-300">
+                    Your one-stop solution for all insurance needs - bike, car, truck, and life insurance with the best coverage at competitive prices
+                </p>
+                <div class="flex flex-wrap">
+                    <a href="#quote" class="btn-primary px-8 py-3 mr-4 mb-4">Get Free Quote</a>
+                    <a href="#services" class="border border-white px-8 py-3 rounded-md hover:bg-white hover:text-gray-900 transition">Our Services</a>
+                </div>
+                <div class="mt-8 flex flex-wrap">
+                    <div class="trust-badge"><i class="fas fa-shield-alt mr-2"></i> IRDAI Registered</div>
+                    <div class="trust-badge"><i class="fas fa-check-circle mr-2"></i> Fast Claim Settlement</div>
+                    <div class="trust-badge"><i class="fas fa-headset mr-2"></i> 24/7 Support</div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://page.genspark.site/v1/base64_upload/f59fa40a1b69240768b5c0ffeedde1a4" alt="Insurance Banner" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold navy-bg inline-block text-white px-6 py-2 rounded-lg">Our Insurance Services</h2>
+                <p class="mt-4 text-xl text-gray-600">Comprehensive coverage for all your insurance needs</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Bike Insurance -->
+                <div class="insurance-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="navy-bg text-center py-6">
+                        <i class="fas fa-motorcycle service-icon gold-text"></i>
+                        <h3 class="text-xl font-bold text-white">Bike Insurance</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 text-gray-700">
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Comprehensive & Third-party Coverage</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Personal Accident Cover</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Fast Claim Settlement</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Cashless Repairs at Network Garages</span>
+                            </li>
+                        </ul>
+                        <a href="#quote" class="block text-center btn-primary w-full py-2">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Car Insurance -->
+                <div class="insurance-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="navy-bg text-center py-6">
+                        <i class="fas fa-car service-icon gold-text"></i>
+                        <h3 class="text-xl font-bold text-white">Car Insurance</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 text-gray-700">
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Comprehensive & Third-party Cover</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Zero Depreciation Option</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>24/7 Roadside Assistance</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>NCB Transfer & Protection</span>
+                            </li>
+                        </ul>
+                        <a href="#quote" class="block text-center btn-primary w-full py-2">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Truck Insurance -->
+                <div class="insurance-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="navy-bg text-center py-6">
+                        <i class="fas fa-truck service-icon gold-text"></i>
+                        <h3 class="text-xl font-bold text-white">Truck Insurance</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 text-gray-700">
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Commercial Vehicle Coverage</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Goods in Transit Insurance</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Driver & Cleaner Coverage</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Fleet Insurance Options</span>
+                            </li>
+                        </ul>
+                        <a href="#quote" class="block text-center btn-primary w-full py-2">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Life Insurance -->
+                <div class="insurance-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="navy-bg text-center py-6">
+                        <i class="fas fa-heart service-icon gold-text"></i>
+                        <h3 class="text-xl font-bold text-white">Life Insurance</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-6 text-gray-700">
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Term Life Plans</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Endowment Policies</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>ULIPs & Investment Options</span>
+                            </li>
+                            <li class="mb-2 flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Retirement & Pension Plans</span>
+                            </li>
+                        </ul>
+                        <a href="#quote" class="block text-center btn-primary w-full py-2">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote" class="py-16 px-6 bg-gray-100">
+        <div class="container mx-auto">
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="navy-bg text-white p-8 text-center">
+                    <h2 class="text-3xl font-bold">Get Your Free Insurance Quote</h2>
+                    <p class="mt-2">Fill the form below and our executive will contact you within 24 hours</p>
+                </div>
+                <form class="p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        </div>
+                        <div>
+                            <label for="mobile" class="block text-gray-700 font-medium mb-2">Mobile Number</label>
+                            <input type="tel" id="mobile" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        </div>
+                        <div>
+                            <label for="insurance-type" class="block text-gray-700 font-medium mb-2">Insurance Type</label>
+                            <select id="insurance-type" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                                <option value="">Select Insurance Type</option>
+                                <option value="bike">Bike Insurance</option>
+                                <option value="car">Car Insurance</option>
+                                <option value="truck">Truck Insurance</option>
+                                <option value="life">Life Insurance</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Additional Information</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <button type="submit" class="btn-primary px-8 py-3 w-full md:w-auto">Submit Quote Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section id="partners" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Partner Companies</h2>
+                <p class="text-xl text-gray-600">We're connected with top insurance providers in India</p>
+            </div>
+
+            <!-- Partner logos -->
+            <div class="flex flex-wrap justify-center items-center">
+                <div class="company-logo-wrapper">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="company-logo flex items-center justify-center">TATA AIG</div>
+                        <div class="company-logo flex items-center justify-center">Reliance</div>
+                        <div class="company-logo flex items-center justify-center">Kotak</div>
+                        <div class="company-logo flex items-center justify-center">Royal Sundaram</div>
+                        <div class="company-logo flex items-center justify-center">HDFC</div>
+                        <div class="company-logo flex items-center justify-center">Bajaj</div>
+                        <div class="company-logo flex items-center justify-center">Magma</div>
+                        <div class="company-logo flex items-center justify-center">ICICI Lombard</div>
+                        <div class="company-logo flex items-center justify-center">Digit</div>
+                        <div class="company-logo flex items-center justify-center">Chola</div>
+                        <div class="company-logo flex items-center justify-center">SBI</div>
+                        <div class="company-logo flex items-center justify-center">IFFCO Tokio</div>
+                        <div class="company-logo flex items-center justify-center">Liberty</div>
+                        <div class="company-logo flex items-center justify-center">Universal Sompo</div>
+                        <div class="company-logo flex items-center justify-center">Pure India</div>
+                        <div class="company-logo flex items-center justify-center">UNITED</div>
+                        <div class="company-logo flex items-center justify-center">Oriental</div>
+                        <div class="company-logo flex items-center justify-center">Future General</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 px-6 bg-gray-100">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Why Choose ASKPARVEENINSURANCE</h2>
+                <p class="text-xl text-gray-600">We're committed to providing the best insurance experience</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="rounded-full bg-yellow-100 w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hand-holding-usd text-yellow-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Best Premium Rates</h3>
+                    <p class="text-gray-600">We compare multiple insurance providers to get you the best rates without compromising on coverage.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="rounded-full bg-yellow-100 w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bolt text-yellow-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Quick Processing</h3>
+                    <p class="text-gray-600">Fast policy issuance and claim settlements with minimal documentation and hassle-free process.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="rounded-full bg-yellow-100 w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-yellow-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Dedicated Support</h3>
+                    <p class="text-gray-600">Our team provides personalized assistance for all your insurance-related queries and claims.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 px-6 navy-bg text-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-300">Trusted by thousands of satisfied customers</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="ml-2 text-sm">5.0</p>
+                    </div>
+                    <p class="mb-6">"Got my car insurance at a great discount. The process was smooth and fast. Highly recommend their services!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Rajesh Kumar</h4>
+                            <p class="text-sm text-gray-600">Car Insurance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="ml-2 text-sm">5.0</p>
+                    </div>
+                    <p class="mb-6">"Their claim process is very efficient. When my bike met with an accident, they helped me throughout. Got my settlement in just 3 days!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Priya Sharma</h4>
+                            <p class="text-sm text-gray-600">Bike Insurance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="ml-2 text-sm">4.5</p>
+                    </div>
+                    <p class="mb-6">"Got the best term insurance plan for my family at a reasonable premium. The agent explained all the policy details very clearly."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sanjay Patel</h4>
+                            <p class="text-sm text-gray-600">Life Insurance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://page.genspark.site/v1/base64_upload/ecbf3235ce7729efdab5ea3123e4bc49" alt="ASKPARVEENINSURANCE Office" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">About ASKPARVEENINSURANCE</h2>
+                    <p class="text-gray-700 mb-4">
+                        ASKPARVEENINSURANCE is a leading insurance broker offering comprehensive insurance solutions to individuals and businesses across India. With years of experience in the industry, we understand the unique insurance needs of our clients.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Our mission is to provide affordable insurance coverage with excellent customer service. We work with top insurance providers in India to offer the best coverage options at competitive rates.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Whether you need insurance for your vehicle, business, or life, our team of experts is here to guide you through the entire process from choosing the right policy to claim settlement.
+                    </p>
+                    <div class="flex flex-wrap">
+                        <div class="mr-6 mb-4">
+                            <h4 class="font-bold text-lg gold-text">500+</h4>
+                            <p class="text-gray-600">Happy Clients</p>
+                        </div>
+                        <div class="mr-6 mb-4">
+                            <h4 class="font-bold text-lg gold-text">15+</h4>
+                            <p class="text-gray-600">Insurance Partners</p>
+                        </div>
+                        <div class="mr-6 mb-4">
+                            <h4 class="font-bold text-lg gold-text">98%</h4>
+                            <p class="text-gray-600">Claim Settlement</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-bold text-lg gold-text">5</h4>
+                            <p class="text-gray-600">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-gray-100">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600">Get in touch with our insurance experts</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="contact-name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+                            <div class="mb-4">
+                                <label for="contact-email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+                            <div class="mb-4">
+                                <label for="contact-phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="contact-phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary px-8 py-3">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="navy-bg text-white p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                            <div class="mb-6">
+                                <p class="mb-2 font-semibold">Address:</p>
+                                <p class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                                    <span>Timber Colony, Rourkela, Odisha, Sundargarh, 769001</span>
+                                </p>
+                            </div>
+                            <div class="mb-6">
+                                <p class="mb-2 font-semibold">Phone:</p>
+                                <p class="flex items-center">
+                                    <i class="fas fa-phone-alt mr-3"></i>
+                                    <a href="tel:7609835426">7609835426</a>
+                                </p>
+                            </div>
+                            <div class="mb-6">
+                                <p class="mb-2 font-semibold">Email:</p>
+                                <p class="flex items-center">
+                                    <i class="fas fa-envelope mr-3"></i>
+                                    <a href="mailto:info@askparveeninsurance.com">info@askparveeninsurance.com</a>
+                                </p>
+                            </div>
+                            <div class="mb-8">
+                                <p class="mb-2 font-semibold">Working Hours:</p>
+                                <p class="flex items-center">
+                                    <i class="fas fa-clock mr-3"></i>
+                                    <span>Monday to Saturday: 9am - 6pm</span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <h4 class="font-semibold mb-4">Follow Us:</h4>
+                            <div class="flex">
+                                <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center mr-3 hover:bg-white hover:text-gray-900 transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center mr-3 hover:bg-white hover:text-gray-900 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center mr-3 hover:bg-white hover:text-gray-900 transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-gray-900 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-6 bg-yellow-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Get Protected?</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                Contact us today for personalized insurance solutions tailored to your specific needs at the best prices
+            </p>
+            <div class="flex flex-col md:flex-row justify-center">
+                <a href="tel:7609835426" class="btn-primary px-8 py-3 font-semibold mb-4 md:mb-0 md:mr-4 flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    Call: 7609835426
+                </a>
+                <a href="#quote" class="navy-bg text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition flex items-center justify-center">
+                    <i class="fas fa-clipboard-list mr-2"></i>
+                    Get Free Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="navy-bg text-white pt-12 pb-6 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ASKPARVEENINSURANCE</h3>
+                    <p class="mb-4 text-gray-300">Your trusted insurance partner for all your protection needs.</p>
+                    <p class="flex items-start mb-2 text-gray-300">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                        <span>Timber Colony, Rourkela, Odisha, Sundargarh, 769001</span>
+                    </p>
+                    <p class="flex items-center mb-2 text-gray-300">
+                        <i class="fas fa-phone-alt mr-3"></i>
+                        <a href="tel:7609835426">7609835426</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                    <ul class="text-gray-300">
+                        <li class="mb-2"><a href="#" class="hover:text-yellow-300">Bike Insurance</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-yellow-300">Car Insurance</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-yellow-300">Truck Insurance</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-yellow-300">Life Insurance</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-yellow-300">Health Insurance</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-yellow-300">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="text-gray-300">
+                        <li class="mb-2"><a href="#home" class="hover:text-yellow-300">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="hover:text-yellow-300">About Us</a></li>
+                        <li class="mb-2"><a href="#services" class="hover:text-yellow-300">Services</a></li>
+                        <li class="mb-2"><a href="#partners" class="hover:text-yellow-300">Partners</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-yellow-300">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-yellow-300">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4 text-gray-300">Subscribe to our newsletter for updates on insurance policies and offers.</p>
+                    <form>
+                        <div class="flex mb-4">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
+                            <button type="submit" class="btn-primary px-4 py-2 rounded-r-md">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="flex mt-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-gray-900 flex items-center justify-center mr-3 hover:bg-yellow-300 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-gray-900 flex items-center justify-center mr-3 hover:bg-yellow-300 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-gray-900 flex items-center justify-center mr-3 hover:bg-yellow-300 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-gray-900 flex items-center justify-center hover:bg-yellow-300 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-300">
+                <p>&copy; 2024 ASKPARVEENINSURANCE. All Rights Reserved.</p>
+                <p class="text-sm mt-2">Insurance is subject to terms and conditions of the Insurance Policy. For more details on risk factors, terms, conditions and exclusions, please read the policy wordings before concluding the sale.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your submission! Our team will contact you shortly.');
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>
